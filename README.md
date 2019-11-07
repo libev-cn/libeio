@@ -22,6 +22,6 @@
 
   Checkout `demo.c`.
 
-## What's LICENSE ?
+## LICENSE
 
   [LICENSE](https://github.com/CandyMi/libeio/blob/master/LICENSE)
