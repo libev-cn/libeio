@@ -1,6 +1,6 @@
-# libeio
+# libeio —— Event-based fully asynchronous I/O library for C.
 
-  Event-based fully asynchronous I/O library for C. From [here](http://software.schmorp.de/pkg/libeio.html)
+  From [here](http://software.schmorp.de/pkg/libeio.html)
 
 ## Blurb
 
@@ -10,3 +10,18 @@
 
   Its code, documentation, integration and portability quality is currently below that of libev, but should soon be ready for use in production environments.
 
+## How To Build ?
+
+  1. `./autogen.sh`
+
+  2. `./configure`
+
+  3. `make && make install`
+
+## How To Use It ?
+
+  Checkout `demo.c`.
+
+## What's LICENSE ?
+
+  [LICENSE](https://github.com/CandyMi/libeio/blob/master/LICENSE)
