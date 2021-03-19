@@ -1641,7 +1641,7 @@ eio__scandir (eio_req *req, etp_worker *self)
 
 #if !HAVE_AT
 
-/* a bit like realpath, but usually faster because it doesn'T have to return */
+/* a bit like realpath, but usually faster because it doesn't have to return */
 /* an absolute or canonical path */
 static const char *
 wd_expand (struct etp_tmpbuf *tmpbuf, eio_wd wd, const char *path)
@@ -1940,7 +1940,7 @@ eio_execute (etp_worker *self, eio_req *req)
       case EIO_RMDIR:     /* complications arise because "." cannot be removed, so we might have to expand */
                           req->result = req->wd && SINGLEDOT (req->ptr1)
                              ? rmdir (req->wd->str)
-                             : unlinkat  (dirfd, req->ptr1, AT_REMOVEDIR); break;
+                             : unlinkat (dirfd, req->ptr1, AT_REMOVEDIR); break;
       case EIO_MKDIR:     req->result = mkdirat   (dirfd, req->ptr1, (mode_t)req->int2); break;
       case EIO_RENAME:    req->result = eio__renameat2 (
                             dirfd,
