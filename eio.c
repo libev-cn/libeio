@@ -305,6 +305,8 @@ static void eio_destroy (eio_req *req);
 #if HAVE_RENAMEAT2
 # include <sys/syscall.h>
 # include <linux/fs.h>
+#else
+# include <stdio.h> // fix can't find rename
 #endif
 
 #ifndef D_TYPE
